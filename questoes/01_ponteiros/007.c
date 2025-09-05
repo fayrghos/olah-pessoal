@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-void ler_cenario(int *tam_fileira, int *cenario) {
-    for (int i = 0; i < *tam_fileira; i++) {
+void ler_cenario(int tam_fileira, int *cenario) {
+    for (int i = 0; i < tam_fileira; i++) {
         scanf("%i", cenario + i);
     }
 }
@@ -13,7 +13,7 @@ int main() {
     scanf("%i", &num_blocos);
 
     int cenario[num_blocos];
-    ler_cenario(&num_blocos, cenario);
+    ler_cenario(num_blocos, cenario);
 
     for (int i = 0; i < num_blocos; i++) {
         if (cenario[i] == 1) {

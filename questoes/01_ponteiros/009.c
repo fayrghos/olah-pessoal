@@ -5,7 +5,7 @@ int main() {
     int pontuacao_total = 0;
     int *ptr_moeda = moedas_coletadas;
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; ptr_moeda <= (moedas_coletadas + 4); i++) {
         pontuacao_total += *ptr_moeda;
         ptr_moeda++;
     }
