@@ -7,7 +7,7 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         printf("Insira o nome do item %i: ", i + 1);
-        scanf(" %s", inventario + i);
+        scanf(" %s", *(inventario + i));
     }
 
     printf("Insira o nome do item necessário para abrir a porta: ");
@@ -15,7 +15,7 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         if (strcmp(inventario[i], necessario) == 0) {
-            printf("Porta aberta\n!");
+            printf("Porta aberta!\n");
             return 0;
         }
     }
