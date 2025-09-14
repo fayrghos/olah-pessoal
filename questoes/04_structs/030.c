@@ -15,12 +15,12 @@ int main() {
 
     char nome_digitado[50];
     printf("Digite o nome do seu personagem: ");
-    scanf(" %s", &nome_digitado);
+    scanf(" %s", nome_digitado);
 
     strcpy(player1.nome, nome_digitado);
 
-    printf("Personagem criado! Bem-vindo, %s! Vidas: %i, Pontuação: %i\n", player1.nome, player1.vidas,
-           player1.pontuacao);
+    printf("Personagem criado! Bem-vindo, %s! Vidas: %i, Pontuação: %i\n",
+           player1.nome, player1.vidas, player1.pontuacao);
 
     return 0;
 }
