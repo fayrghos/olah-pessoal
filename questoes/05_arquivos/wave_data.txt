@@ -1,0 +1,5 @@
+Goblin 50 10
+Orc 120 25
+Esqueleto 75 15
+Lich 200 50
+Gargula 90 22

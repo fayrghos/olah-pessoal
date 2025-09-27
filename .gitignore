@@ -1,2 +1,6 @@
 .vscode/
 **.out
+
+**.txt
+!inimigos.txt
+!wave_data.txt
