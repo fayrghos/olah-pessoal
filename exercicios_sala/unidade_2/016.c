@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ARQ_LIVROS "./livros.txt"
+#define ARQ_LIVROS "./livros_q016.txt"
 
 typedef struct {
     int id;
