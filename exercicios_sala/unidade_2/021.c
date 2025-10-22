@@ -43,7 +43,7 @@ int main() {
     }
     printf("\n");
 
-    // Por código
+    // Por ano
     for (int i = 0; i < n; i++) {
         Livro temp_mais_recente = livros[i];
         int pos_menor = i;
