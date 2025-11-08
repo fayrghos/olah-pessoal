@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int calc_cristais(int i, int quant, int vetor[]) {
-    if (i == quant) {
+    if (i > quant) {
         return 0;
     }
 
@@ -19,5 +19,14 @@ int main() {
     scanf("%i", &quant_cristais);
 
     int cristais[quant_cristais];
-    calc_cristais(0, quant_cristais - 1, cristais);
+
+    for (int i = 0; i < quant_cristais; i++) {
+        printf("Insira a carga do cristal %i: ", i + 1);
+        scanf("%i", &cristais[i]);
+    }
+
+    int quant_positivos = calc_cristais(0, quant_cristais - 1, cristais);
+    printf("Quantidade de positivos: %i\n", quant_positivos);
+
+    return 0;
 }
