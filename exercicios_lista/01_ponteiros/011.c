@@ -15,7 +15,7 @@ int main() {
     printf("Granadas: %i\n", *inventario[1]);
     printf("Foguetes: %i\n", *inventario[2]);
 
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 3; i++) {
         **(inventario + i) -= 1;
     }
 
