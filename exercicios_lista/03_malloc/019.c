@@ -14,6 +14,9 @@ int main() {
 
     *ptr_altura_salto_duplo = 15.5;
 
-    printf("Pena Dourada coletada! Altura do Salto Duplo: %.2f\n", *ptr_altura_salto_duplo);
+    printf("Pena Dourada coletada! Altura do Salto Duplo: %.2f\n",
+           *ptr_altura_salto_duplo);
+
+    free(ptr_altura_salto_duplo);
     return 0;
 }
