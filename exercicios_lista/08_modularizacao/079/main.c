@@ -1,5 +1,6 @@
 #include "heroi/heroi.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int n;
@@ -10,5 +11,6 @@ int main() {
     ler_herois(herois, n);
     imprimir_herois(herois, n);
 
+    free(herois);
     return 0;
 }
